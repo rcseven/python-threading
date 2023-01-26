@@ -43,7 +43,5 @@ def worker1():
 
 if __name__ == "__main__":
     worker1_thread = threading.Thread(target=worker1)
-    worker1_thread.setDaemon(True)
     worker1_thread.start()
-    worker1_thread.join()
     logging.debug("Main thread finished")
