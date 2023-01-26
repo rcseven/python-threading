@@ -9,7 +9,7 @@ is_processing = True
 def worker3():
     global is_processing
     logging.debug("Worker 3 started")
-    for i in range(15, -1, -1):
+    for i in range(15, 0, -1):
         is_processing = True
         logging.debug(f"Worker 3 counting: {i}")
     logging.debug("Worker 3 finished")
